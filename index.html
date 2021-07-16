@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech</title>
+
+    <style>
+      body {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1rem;
+      }
+      #text {
+        width: 100%;
+        height: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="text">
+The SpeechSynthesisUtterance interface of the Web Speech API represents a speech request. It contains the content the speech service should read and information about how to read it (e.g. language, pitch and volume.)</textarea
+    >
+    <label for="speed">speed</label>
+    <input type="number" name="spee" id="speed" min="0.5" max="3" value="1" />
+    <button id="play-button">play</button
+    ><button id="resume-button">resume</button
+    ><button id="pause-button">pause</button
+    ><button id="stop-button">stop</button> Select Voice:
+    <select id="voiceList"></select>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
